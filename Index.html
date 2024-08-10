@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 class="page-heading">Simple Calculator</h1>
+    
+    <div class="calculator">
+        <input type="text" class="calculator-screen" id="screen" disabled />
+
+        <div class="calculator-keys">
+            <button class="operator" onclick="pressOperator('+')">+</button>
+            <button class="operator" onclick="pressOperator('-')">-</button>
+            <button class="operator" onclick="pressOperator('*')">&times;</button>
+            <button class="operator" onclick="pressOperator('/')">÷</button>
+
+            <button onclick="pressNumber('7')">7</button>
+            <button onclick="pressNumber('8')">8</button>
+            <button onclick="pressNumber('9')">9</button>
+            <button onclick="clearScreen()">C</button>
+
+            <button onclick="pressNumber('4')">4</button>
+            <button onclick="pressNumber('5')">5</button>
+            <button onclick="pressNumber('6')">6</button>
+            <button onclick="deleteLast()">DEL</button>
+
+            <button onclick="pressNumber('1')">1</button>
+            <button onclick="pressNumber('2')">2</button>
+            <button onclick="pressNumber('3')">3</button>
+            <button onclick="calculateResult()">=</button>
+
+            <button onclick="pressNumber('0')">0</button>
+            <button onclick="pressNumber('.')">.</button>
+            <button class="operator" onclick="calculateSquareRoot()">√</button>
+            <button class="operator" onclick="pressOperator('%')">%</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
